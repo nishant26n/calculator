@@ -1,0 +1,48 @@
+.main-container {
+  width: 15rem;
+}
+
+.container input {
+  width: 15.9rem;
+  height: 2rem;
+  border: none;
+  background-color: #aefa;
+  border-radius: 4px;
+}
+
+.keypad {
+  width: 16rem;
+}
+
+.keypad button {
+  padding: 9px;
+  border: none;
+  color: #aefa;
+  background-color: #222222;
+}
+.keypad button:hover {
+  transition-duration: 0.2s;
+  background-color: #aefa;
+  color: #222222;
+  cursor: pointer;
+}
+
+.clear-all {
+  width: 4rem;
+  height: 3rem;
+}
+
+.clear {
+  width: 4rem;
+  height: 3rem;
+}
+
+.num-btn {
+  width: 4rem;
+  height: 3rem;
+}
+
+.symbol {
+  width: 4rem;
+  height: 3rem;
+}
