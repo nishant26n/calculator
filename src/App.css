@@ -6,10 +6,9 @@
 }
 
 .header {
-  margin: 0;
-  position: absolute;
-  top: 25%;
-  left: 40%;
+  display: grid;
+  justify-content: center;
+  margin-top: 5rem;
 }
 
 h1 {

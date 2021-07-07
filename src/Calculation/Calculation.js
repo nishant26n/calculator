@@ -7,25 +7,41 @@ const Calculation = () => {
     setResult(result.concat(e.target.name));
   };
 
-  const clearAll = (e) => {
-    const newResult = e.currentTarget.value;
-    setResult(newResult);
+  const clearAll = () => {
+    setResult("");
+  };
+
+  const clear = () => {
+    setResult(result.slice(0, result.length - 1));
+  };
+
+  const calculate = () => {
+    try {
+      // eslint-disable-next-line
+      setResult(eval(result.toString()));
+    } catch (err) {
+      setResult("Error");
+    }
   };
 
   return (
     <div className="main-container">
       <div className="container">
         <form>
-          <input type="text" value={result} onChange={clearAll} />
+          <input type="text" value={result} onChange={clearAll} readOnly />
         </form>
       </div>
 
       <div className="keypad">
-        <button onClick={clearAll} className="clear-all">
+        <button onClick={clearAll} id="clearAll" className="clear-all">
           AC
         </button>
-        <button className="clear">C</button>
-        <button className="symbol">%</button>
+        <button onClick={clear} id="backspace" className="clear">
+          C
+        </button>
+        <button className="symbol" onClick={handleClick} name="%">
+          %
+        </button>
         <button className="symbol" onClick={handleClick} name="/">
           /
         </button>
@@ -70,7 +86,7 @@ const Calculation = () => {
         </button>
         <button className="symbol">.</button>
 
-        <button className="symbol" onClick={handleClick} name="=">
+        <button onClick={calculate} className="symbol" name="=">
           =
         </button>
       </div>

@@ -8,6 +8,8 @@
   border: none;
   background-color: #aefa;
   border-radius: 4px;
+  text-align: right;
+  font-size: larger;
 }
 
 .keypad {
