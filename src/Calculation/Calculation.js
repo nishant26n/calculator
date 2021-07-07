@@ -86,7 +86,7 @@ const Calculation = () => {
         </button>
         <button className="symbol">.</button>
 
-        <button onClick={calculate} className="symbol" name="=">
+        <button onClick={calculate} className="result" name="=">
           =
         </button>
       </div>

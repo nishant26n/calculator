@@ -3,28 +3,31 @@
 }
 
 .container input {
-  width: 15.9rem;
+  width: 17.2rem;
   height: 2rem;
+  margin-bottom: 0.5rem;
   border: none;
-  background-color: #aefa;
-  border-radius: 4px;
+  background-color: #3fbdde;
+  border-radius: 8px;
   text-align: right;
   font-size: larger;
 }
 
 .keypad {
-  width: 16rem;
+  width: 17.5rem;
 }
 
-.keypad button {
+.keypad .num-btn {
   padding: 9px;
   border: none;
-  color: #aefa;
+  color: #3fbdde;
   background-color: #222222;
+  margin: 3px;
+  border-radius: 8px;
 }
-.keypad button:hover {
+.keypad .num-btn:hover {
   transition-duration: 0.2s;
-  background-color: #aefa;
+  background-color: #3fbdde;
   color: #222222;
   cursor: pointer;
 }
@@ -32,11 +35,23 @@
 .clear-all {
   width: 4rem;
   height: 3rem;
+  color: #222222;
+  background-color: #3fbdde;
+  padding: 9px;
+  border: none;
+  margin: 3px;
+  border-radius: 8px;
 }
 
 .clear {
   width: 4rem;
   height: 3rem;
+  color: #222222;
+  background-color: #3fbdde;
+  padding: 9px;
+  border: none;
+  margin: 3px;
+  border-radius: 8px;
 }
 
 .num-btn {
@@ -44,7 +59,34 @@
   height: 3rem;
 }
 
-.symbol {
+.keypad .symbol {
   width: 4rem;
   height: 3rem;
+  background-color: #3fbdde;
+  color: #222222;
+  padding: 9px;
+  border: none;
+  margin: 3px;
+  border-radius: 8px;
+}
+
+.keypad .result {
+  width: 8.3rem;
+  height: 3rem;
+  background-color: #3fbdde;
+  color: #222222;
+  padding: 9px;
+  border: none;
+  margin: 3px;
+  border-radius: 8px;
+}
+
+.clear:hover,
+.clear-all:hover,
+.result:hover,
+.symbol:hover {
+  transition-duration: 0.2s;
+  background-color: #222222;
+  color: #3fbdde;
+  cursor: pointer;
 }

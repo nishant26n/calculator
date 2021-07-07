@@ -1,8 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Prompt&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Parisienne&display=swap");
+
 * {
   margin: 0;
   box-sizing: 0;
-  background-color: #498f9b;
+  background-color: #0a1c32;
 }
 
 .header {
@@ -12,8 +13,9 @@
 }
 
 h1 {
-  font-family: "Prompt", sans-serif;
-  color: #222222;
-  display: flex;
-  justify-content: center;
+  font-family: "Parisienne", cursive;
+  font-size: 4rem;
+  color: #3fbdde;
+  width: 17.5rem;
+  text-align: center;
 }
