@@ -25,7 +25,7 @@
   margin: 3px;
   border-radius: 8px;
 }
-.keypad .num-btn:hover {
+.keypad .num-btn:active {
   transition-duration: 0.2s;
   background-color: #3fbdde;
   color: #222222;
@@ -81,10 +81,10 @@
   border-radius: 8px;
 }
 
-.clear:hover,
-.clear-all:hover,
-.result:hover,
-.symbol:hover {
+.clear:active,
+.clear-all:active,
+.result:active,
+.symbol:active {
   transition-duration: 0.2s;
   background-color: #222222;
   color: #3fbdde;
